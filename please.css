@@ -1,0 +1,86 @@
+body {
+    background-image: url(Night.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* MAIN CARD */
+.card {
+    display: flex;
+    width: 700px;
+    background-color: rgb(197, 225, 250);
+    border: 5px solid rgb(118, 0, 197);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+/* flower on top-left */
+.flower {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+}
+
+/* main image */
+.main-img {
+    width: 100%;
+    border-radius: 12px;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 60%;
+    padding: 25px;
+    border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.right p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* NEXT BUTTON */
+.next-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(118, 0, 197);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
